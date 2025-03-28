@@ -13,9 +13,21 @@
 
 	<style>
 		body {
-		font-family: 'Space Mono', monospace;
-		text-align: center;
-		height: 100vh;
+			display: flex;
+			font-family: 'Space Mono', monospace;
+			justify-content: flex-start;
+			align-items: flex-start;
+			height: 100vh;
+  			margin: 0;
+  			padding: 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			body (
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 	</style>
 </head>
