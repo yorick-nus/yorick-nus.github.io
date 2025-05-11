@@ -181,7 +181,7 @@ img {
 }
 
 .two-column-layout div {
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
 }
 
 .portfolio-navigation {
@@ -344,4 +344,3 @@ li {
         top: -15px;
     }
 }
-
