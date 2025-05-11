@@ -69,6 +69,10 @@ footer {
     position: absolute;
     inline-size: 100%;
     text-align: center;
+
+    @media (width > 750px) {
+        padding-block-end: 1.5rem;
+    }
 }
 
 .intro-heading {
