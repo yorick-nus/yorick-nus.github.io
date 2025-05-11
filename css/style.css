@@ -181,12 +181,12 @@ img {
 }
 
 .two-column-layout div {
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
 }
 
 .portfolio-navigation {
     display: grid;
-    padding-inline: 0.5rem;
+    padding-inline: 2rem;
     padding-block-start: 1rem;
     inline-size: 100%;
     max-inline-size: 450px;
@@ -344,3 +344,4 @@ li {
         top: -15px;
     }
 }
+
