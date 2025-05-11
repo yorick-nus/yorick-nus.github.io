@@ -15,7 +15,7 @@ body {
     color: #0000ff;
     overflow-x: hidden;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         font-size: 1.125rem;
     }
 }
@@ -28,7 +28,7 @@ h2 {
 
     z-index: 2;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         margin: 0;
         font-size: 3rem;
         padding-block: 0.5rem;
@@ -39,7 +39,7 @@ p {
     line-height: 1.4;
     margin-block-end: 1.5rem;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         line-height: 1.45;
     }
 }
@@ -52,7 +52,7 @@ footer {
     font-family: "Boldonse", Impact, "Arial Black", sans-serif;
     font-size: 1.85rem;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         font-size: clamp(1.4rem, 5vw, 1.85rem);
     }
 }
@@ -83,7 +83,7 @@ footer {
     max-inline-size: 1000px;
     padding-inline: 2rem;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         padding-inline: 0;
     }
 }
@@ -109,7 +109,7 @@ footer {
     }
 }
 
-@media (height < 601px) {
+@media (height <= 600px) {
     .intro-svg-normal {
         display: none;
     }
@@ -124,7 +124,7 @@ footer {
     }
 }
 
-@media (height > 600px) and (width < 751px) {
+@media (height > 600px) and (width <= 750px) {
     .intro-svg-normal {
         display: none;
     }
@@ -154,7 +154,7 @@ img {
     margin-inline: auto;
     padding-inline: 2rem;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         padding-inline: 1rem;
     }
 }
@@ -162,13 +162,13 @@ img {
 .text-section {
     padding-block: 2rem;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         padding-block-end: 0.25rem;
     }
 }
 
 .text-section .text {
-    @media (width < 751px) {
+    @media (width <= 750px) {
         padding-block-start: 0.5rem;
     }
 }
@@ -255,7 +255,7 @@ li {
     font-size: 1.85rem;
     font-weight: normal;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         font-size: 1.4rem;
     }
 }
@@ -269,7 +269,7 @@ li {
     justify-content: center;
     gap: 30px;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         gap: 15px;
         padding-block-start: 1rem;
     }
@@ -302,7 +302,7 @@ li {
     align-items: center;
     justify-content: center;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         inline-size: 3rem;
     }
 }
@@ -311,7 +311,7 @@ li {
     inline-size: 4rem;
     block-size: auto;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         inline-size: 3rem;
     }
 }
@@ -323,14 +323,9 @@ li {
 
     position: absolute;
 
-    @media (width < 751px) {
+    @media (width <= 750px) {
         inline-size: 7rem;
     }
-}
-
-.spacer {
-    display: inline-block;
-    width: 5rem;
 }
 
 .white-blue-gradient {
