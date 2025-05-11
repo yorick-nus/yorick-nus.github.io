@@ -101,7 +101,7 @@ footer {
         display: none;
     }
     .intro-heading {
-        block-size: calc(100vh - 5rem);
+        block-size: calc(100vh - 8rem);
     }
 }
 
@@ -116,7 +116,7 @@ footer {
         display: none;
     }
     .intro-heading {
-        block-size: calc(100vh - 5rem);
+        block-size: calc(100vh - 8rem);
     }
 }
 
