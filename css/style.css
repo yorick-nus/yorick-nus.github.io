@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
 
     @media (width < 751px) {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 }
 
