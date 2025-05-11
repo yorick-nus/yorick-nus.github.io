@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
 
     @media (width < 751px) {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -165,7 +165,7 @@ img {
 
 .text-section .text {
     @media (width < 751px) {
-        padding-block-start: 0.25rem;
+        padding-block-start: 0.5rem;
     }
 }
 
