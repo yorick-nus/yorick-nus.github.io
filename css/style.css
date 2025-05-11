@@ -149,6 +149,10 @@ img {
     max-inline-size: 1000px;
     margin-inline: auto;
     padding-inline: 2rem;
+
+    @media (width < 751px) {
+        padding-inline: 1rem;
+    }
 }
 
 .text-section {
@@ -186,7 +190,7 @@ img {
 
 .portfolio-navigation {
     display: grid;
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
     padding-block-start: 1rem;
     inline-size: 100%;
     max-inline-size: 450px;
@@ -344,3 +348,4 @@ li {
         top: -15px;
     }
 }
+
