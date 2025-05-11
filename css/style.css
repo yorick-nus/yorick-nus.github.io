@@ -186,7 +186,7 @@ img {
 
 .portfolio-navigation {
     display: grid;
-    padding-inline: 1rem;
+    padding-inline: 1.5rem;
     padding-block-start: 1rem;
     inline-size: 100%;
     max-inline-size: 450px;
@@ -344,4 +344,3 @@ li {
         top: -15px;
     }
 }
-
