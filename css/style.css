@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* Global Styles (Shared across pages) */
 html {
     overflow-x: hidden;
 }
@@ -12,7 +13,6 @@ body {
     padding: 0;
     font-family: "Manrope" ,"Helvetica Neue", Arial, sans-serif;
     font-size: 1.25rem;
-    color: #0000ff;
     overflow-x: hidden;
 
     @media (width <= 750px) {
@@ -20,7 +20,96 @@ body {
     }
 }
 
-h2 {
+p {
+    line-height: 1.4;
+    margin-block-end: 1.5rem;
+
+    @media (width <= 750px) {
+        line-height: 1.45;
+    }
+}
+
+footer {
+    font-family: "Boldonse", Impact, "Arial Black", sans-serif;
+    font-size: 1.85rem;
+
+    @media (width <= 750px) {
+        font-size: clamp(1.4rem, 5vw, 1.85rem);
+    }
+}
+
+.footer-heading {
+    text-decoration: none;
+}
+
+.footer-heading p {
+    margin: 0;
+    padding-block-start: 0.25rem;
+    padding-block-end: 1.25rem;
+    position: absolute;
+    inline-size: 100%;
+    text-align: center;
+
+    @media (width > 750px) {
+        padding-block-end: 1.5rem;
+    }
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+
+    @media (width <= 750px) {
+        padding-inline: 1rem;
+    }
+}
+
+.two-column-layout {
+    display: grid;
+
+    @media (width > 750px) {
+        grid-template-columns: 1fr 4fr;
+        gap: 35px;
+    }
+}
+
+.two-column-layout h2 {
+    text-align: center;
+}
+
+.two-column-layout div {
+    padding-inline: 0.5rem;
+}
+
+li {
+    font-family: "Boldonse", Impact, "Arial Black", sans-serif;
+    font-size: 1.85rem;
+    font-weight: normal;
+
+    @media (width <= 750px) {
+        font-size: 1.4rem;
+    }
+}
+
+/* Global Utility Classes */
+.center-both {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Homepage specific styles */
+.homepage {
+    color: #0000ff; 
+}
+
+.homepage h2 {
     font-family: "Boldonse", Impact, "Arial Black", sans-serif;
     font-size: 2.75rem;
     font-weight: normal;
@@ -35,47 +124,11 @@ h2 {
     }
 }
 
-p {
-    line-height: 1.4;
-    margin-block-end: 1.5rem;
-
-    @media (width <= 750px) {
-        line-height: 1.45;
-    }
-}
-
-/* p:last-of-type {
-    margin-block-end: 0;
-} */
-
-footer {
-    font-family: "Boldonse", Impact, "Arial Black", sans-serif;
-    font-size: 1.85rem;
-
-    @media (width <= 750px) {
-        font-size: clamp(1.4rem, 5vw, 1.85rem);
-    }
-}
-
-.footer-text {
+.homepage .footer-heading {
     color: #0000ff;
-    text-decoration: none;
 }
 
-.footer-text p {
-    margin: 0;
-    padding-block-start: 0.25rem;
-    padding-block-end: 1.25rem;
-    position: absolute;
-    inline-size: 100%;
-    text-align: center;
-
-    @media (width > 750px) {
-        padding-block-end: 1.5rem;
-    }
-}
-
-.intro-heading {
+.homepage .hero-image {
     margin: 0;
     margin-inline: auto;
     position: relative;
@@ -88,78 +141,57 @@ footer {
     }
 }
 
-.intro-svg-normal
-.intro-svg-thin
-.intro-svg-wide {
-    display: none;
-}
-
 @media (height > 600px) and (width > 750px) {
-    .intro-svg-normal {
+    .homepage .hero-svg-normal {
         display: block;
     }
-    .intro-svg-wide {
+    .homepage .hero-svg-wide {
         display: none;
     }
-    .intro-svg-thin {
+    .homepage .hero-svg-thin {
         display: none;
     }
-    .intro-heading {
+    .homepage .hero-image {
         block-size: calc(100vh - 8rem);
     }
 }
 
 @media (height <= 600px) {
-    .intro-svg-normal {
+    .homepage .hero-svg-normal {
         display: none;
     }
-    .intro-svg-wide {
+    .homepage .hero-svg-wide {
         display: block;
     }
-    .intro-svg-thin {
+    .homepage .hero-svg-thin {
         display: none;
     }
-    .intro-heading {
+    .homepage .hero-image {
         block-size: calc(100vh - 8rem);
     }
 }
 
 @media (height > 600px) and (width <= 750px) {
-    .intro-svg-normal {
+    .homepage .hero-svg-normal {
         display: none;
     }
-    .intro-svg-wide {
+    .homepage .hero-svg-wide {
         display: none;
     }
-    .intro-svg-thin {
+    .homepage .hero-svg-thin {
         display: block;
     }
-    .intro-heading {
+    .homepage .hero-image {
         block-size: calc(100vh - 8rem);
     }
 }
 
-img {
-    max-inline-size: 100%;
-    display: block;
-}
-
-.blue-bg {
+.homepage .themed-bg {
     background-color: #0027e8;
     color: #ffffff;
 }
 
-.wrapper {
-    max-inline-size: 1000px;
-    margin-inline: auto;
-    padding-inline: 2rem;
-
-    @media (width <= 750px) {
-        padding-inline: 1rem;
-    }
-}
-
-.text-section {
+.homepage .homepage.text-section {
     padding-block: 2rem;
 
     @media (width <= 750px) {
@@ -167,32 +199,13 @@ img {
     }
 }
 
-.text-section .text {
+.homepage .text-section .text {
     @media (width <= 750px) {
         padding-block-start: 0.5rem;
     }
 }
 
-.two-column-layout {
-    display: grid;
-
-    @media (width > 750px) {
-        grid-template-columns: 1fr 4fr;
-        gap: 35px;
-    }
-
-    /* border: red dotted 5px; */
-}
-
-.two-column-layout h2 {
-    text-align: center;
-}
-
-.two-column-layout div {
-    padding-inline: 0.5rem;
-}
-
-.portfolio-navigation {
+.homepage .portfolio-navigation {
     display: grid;
     padding-inline: 2rem;
     padding-block-start: 1rem;
@@ -208,7 +221,7 @@ img {
     }
 }
 
-.portfolio-navigation .navigation-button {
+.homepage .portfolio-navigation .navigation-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,51 +229,41 @@ img {
     position: relative; 
 }
 
-.navigation-button img {
+.homepage .portfolio-navigation .navigation-button img {
     position: absolute;
 }
 
-.navigation-button .background {
+.homepage .portfolio-navigation .navigation-button .background {
     z-index: 1;
     max-inline-size: none;
     inline-size: 148%;
     block-size: auto;
 }
 
-.navigation-button .foreground {
+.homepage .portfolio-navigation .navigation-button .foreground {
     z-index: 2;
     max-inline-size: none;
 }
 
-.navigation-button .hitbox {
+.homepage .portfolio-navigation .navigation-button .hitbox {
     z-index: 3;
     position: absolute;
     inline-size: 62.5%;
     block-size: 62.5%;
 }
 
-.navigation-button .coding-cat-thumbnail {
+.homepage .portfolio-navigation .navigation-button .coding-cat-thumbnail {
     inline-size: 68%;
     block-size: auto;
     transform: translateX(9px);
 }
 
-.navigation-button .high-dog-thumbnail {
+.homepage .portfolio-navigation .navigation-button .high-dog-thumbnail {
     inline-size: 108%;
     block-size: auto;
 }
 
-li {
-    font-family: "Boldonse", Impact, "Arial Black", sans-serif;
-    font-size: 1.85rem;
-    font-weight: normal;
-
-    @media (width <= 750px) {
-        font-size: 1.4rem;
-    }
-}
-
-.contact-list {
+.homepage .contact-list {
     list-style-type: none;
     padding-inline-start: 1rem;
 
@@ -275,7 +278,7 @@ li {
     }
 }
 
-.contact-list a {
+.homepage .contact-list a {
     color: #ffffff;
     
     position: relative;
@@ -286,12 +289,12 @@ li {
     gap: 25px;
 }
 
-.contact-list li {
+.homepage .contact-list li {
     position: relative;
     line-height: 1;
 }
 
-.contact-list .icon-placeholder {
+.homepage .contact-list .icon-placeholder {
     inline-size: 4rem;
     block-size: 100%;
     
@@ -307,7 +310,7 @@ li {
     }
 }
 
-.contact-list .icon-foreground {
+.homepage .contact-list .icon-foreground {
     inline-size: 4rem;
     block-size: auto;
 
@@ -316,7 +319,7 @@ li {
     }
 }
 
-.contact-list .icon-background {
+.homepage .contact-list .icon-background {
     inline-size: 9rem;
     block-size: auto;
     max-inline-size: none;
@@ -328,29 +331,32 @@ li {
     }
 }
 
-.white-blue-gradient {
-    background-image: url("../images/Blue_Gradient_Homepage.png");
+.homepage .themed-gradient {
+    background-image: url("../images/Blue_Gradient.png");
     background-size: contain;
     background-repeat: repeat-x;
 
     block-size: 10rem;
 }
 
-.white-blue-gradient.flipped {
+.homepage .themed-gradient.flipped {
     transform: rotate(180deg);
     transform: scaleY(-1);
 }
 
-/* Utility Classes */
-.center-both {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h2-align-top-vertically {
+/* Homepage Utility Classes */
+.homepage .h2-align-top-vertically {
     @media (width > 750px) {
         position: relative;
         top: -15px;
     }
+}
+
+/* Theme Pink Black */
+.theme-pink-black .themed-gradient {
+    background-image: url("../images/Blue_Gradient.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    block-size: 10rem;
 }
