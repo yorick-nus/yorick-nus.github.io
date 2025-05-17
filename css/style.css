@@ -181,14 +181,14 @@ header {
 
 .header-heading {
     display: inline-flex;
-    font-size: clamp(1.2rem, 5vw, 1.7rem);
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
     text-decoration: none;
     z-index: 3;
 
     grid-column: 2;
 
     @media (width > 750px) {
-        font-size: clamp(1.7rem, 2.5vw, 1.85rem);
+        font-size: clamp(1.5rem, 2.3vw, 1.85rem);
     }
 
     /* border: 5px dotted rgb(0, 255, 221); */
@@ -275,13 +275,13 @@ footer {
 
 .footer-heading {
     display: inline-flex;
-    font-size: clamp(1.2rem, 5vw, 1.7rem);
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
     text-decoration: none;
 
     grid-column: 2;
 
     @media (width > 750px) {
-        font-size: clamp(1.7rem, 2.5vw, 1.85rem);
+        font-size: clamp(1.6rem, 2.3vw, 1.85rem);
     }
 
     /* border: 5px dotted rgb(0, 255, 221); */
