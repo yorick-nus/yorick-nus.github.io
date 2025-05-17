@@ -347,8 +347,6 @@ li {
     position: absolute;
     inline-size: 100%;
     z-index: 0;
-
-    /* border: yellow 5px dotted; */
 }
 
 .social-links {
@@ -366,20 +364,12 @@ li {
         align-items: start;
         gap: 25px;
     }
-
-    /* border: 5px purple solid; */
 }
 
 .social-links a {
     display: inline-flex;
     inline-size: 2.5rem;
     block-size: auto;
-
-    @media (width <= 750px) {
-        inline-size: 2.75rem;
-    }
-
-    /* border: 5px green solid;  */
 }
 
 .social-links li {
