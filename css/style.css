@@ -188,7 +188,7 @@ header {
     grid-column: 2;
 
     @media (width > 750px) {
-        font-size: clamp(1.5rem, 2.3vw, 1.85rem);
+        font-size: clamp(1.5rem, 2.2vw, 1.85rem);
     }
 
     /* border: 5px dotted rgb(0, 255, 221); */
@@ -281,7 +281,7 @@ footer {
     grid-column: 2;
 
     @media (width > 750px) {
-        font-size: clamp(1.6rem, 2.3vw, 1.85rem);
+        font-size: clamp(1.6rem, 2.2vw, 1.85rem);
     }
 
     /* border: 5px dotted rgb(0, 255, 221); */
