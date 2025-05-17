@@ -375,9 +375,9 @@ li {
     inline-size: 2.5rem;
     block-size: auto;
 
-    /* @media (width <= 750px) {
-        inline-size: clamp(2.25rem, 6vw, 2.5rem);
-    } */
+    @media (width <= 750px) {
+        inline-size: 2.75rem;
+    }
 
     /* border: 5px green solid;  */
 }
