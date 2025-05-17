@@ -362,7 +362,7 @@ li {
 
     @media (width <= 750px) {
         align-items: start;
-        gap: 25px;
+        gap: 30px;
     }
 }
 
