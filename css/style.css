@@ -174,7 +174,7 @@ header {
 
 .header-heading {
     display: inline-flex;
-    font-size: clamp(1.2rem, 4vw, 1.85rem);
+    font-size: clamp(1.2rem, 5vw, 1.85rem);
     text-decoration: none;
     z-index: 3;
 
@@ -222,7 +222,7 @@ header .home-button .home-icon {
     z-index: 2;
 
     @media (width <= 750px) {
-        inline-size: 2rem;
+        inline-size: clamp(2rem, 11vw, 2.75rem);
     }
 
     /* border: green 5px dashed; */
@@ -237,7 +237,7 @@ header .home-button-bg {
     z-index: 1;
 
     @media (width <= 750px) {
-        inline-size: 5rem;
+        inline-size: 24vw;
     }
 }
 
@@ -268,7 +268,7 @@ footer {
 
 .footer-heading {
     display: inline-flex;
-    font-size: clamp(1.2rem, 4vw, 1.85rem);
+    font-size: clamp(1.2rem, 5vw, 1.85rem);
     text-decoration: none;
 
     grid-column: 2;
