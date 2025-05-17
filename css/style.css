@@ -364,6 +364,7 @@ li {
 
     @media (width <= 750px) {
         align-items: start;
+        gap: 30px;
     }
 
     /* border: 5px purple solid; */
