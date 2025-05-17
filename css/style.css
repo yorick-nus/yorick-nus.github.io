@@ -760,11 +760,11 @@ li {
 
 /* Theme Pink Black */
 .theme-pink-black {
-    color: #ffffff;
     background-color: #ff0076;
 }
 
-.theme-pink-black .body-content {
+.theme-pink-black body {
+    color: #ffffff;
     background-color: #030d22;
 }
 
