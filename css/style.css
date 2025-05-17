@@ -222,7 +222,7 @@ header .home-button .home-icon {
     z-index: 2;
 
     @media (width <= 750px) {
-        inline-size: clamp(2rem, 11vw, 2.75rem);
+        inline-size: clamp(2rem, 10.5vw, 3rem);
     }
 
     /* border: green 5px dashed; */
@@ -237,7 +237,7 @@ header .home-button-bg {
     z-index: 1;
 
     @media (width <= 750px) {
-        inline-size: 24vw;
+        inline-size: clamp(4.5rem, 24vw, 6.9rem);
     }
 }
 
