@@ -183,7 +183,7 @@ header {
     display: inline-flex;
     font-size: clamp(1.2rem, 5vw, 1.85rem);
     text-decoration: none;
-    z-index: 1;
+    z-index: 3;
 
     grid-column: 2;
 
@@ -216,7 +216,7 @@ header .home-button {
     padding-inline-start: 0.45rem;
 
     @media (width <= 750px) {
-        padding-inline-start: 0.5rem;
+        padding-inline-start: 0.25rem;
     }
 
     /* border: yellow 5px dotted; */
