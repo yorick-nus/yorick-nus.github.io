@@ -448,7 +448,7 @@ li {
     max-inline-size: 1000px;
     padding-inline: 2rem;
     /* margin-block-end: 1rem; */
-    margin-block-end: clamp(0rem, calc(10rem - 19vh - 10px), 10rem);
+    margin-block-end: clamp(0rem, calc(10rem - 20vh - 28px), 10rem);
 
     @media (width <= 750px) {
         padding-inline: 0;
@@ -463,8 +463,8 @@ li {
     font-weight: normal;
     fill: #0000ff;
     block-size: 100vh;
-    /* padding-block-start: 1rem; */
-    padding-block-end: 5rem;
+    padding-block-start: 1rem;
+    padding-block-end: 6rem;
 
     /* border: red solid 5px; */
 }
