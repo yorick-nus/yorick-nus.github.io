@@ -450,7 +450,7 @@ li {
 
     @media (width <= 750px) {
         padding-inline: 0;
-        margin-block-end: clamp(-2.5rem, calc(10rem - 20vh - 28px - 2.5rem), 2.5rem);
+        margin-block-end: clamp(-3.5rem, calc(10rem - 20vh - 28px - 3.5rem), 3.5rem);
     }
 
     /* border: green 5px dotted; */
@@ -465,7 +465,7 @@ li {
     padding-block-end: 6rem;
 
     @media (width <= 750px) {
-        padding-block-end: 8rem;
+        padding-block-end: 9rem;
     }
 
     /* border: red solid 5px; */
