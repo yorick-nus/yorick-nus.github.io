@@ -797,9 +797,9 @@ li {
     inline-size: 50vw;
 
     @media (width <= 750px) {
-        inline-size: 100%;
+        inline-size: 97%;
         max-inline-size: 400px;
-        margin-block-start: 0.85rem;
+        margin-block-start: 0.8rem;
         margin-inline: auto;
     }
 }
