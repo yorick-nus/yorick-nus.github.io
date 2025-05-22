@@ -459,7 +459,7 @@ li {
     fill: #0000ff;
 }
 
-@media (height > 600px) and (width > 750px) {
+@media (height > 450px) and (width > 750px) {
     .homepage .hero-svg-normal {
         display: block;
     }
@@ -474,7 +474,7 @@ li {
     }
 }
 
-@media (height <= 600px) {
+@media (height <= 450px) {
     .homepage .hero-svg-normal {
         display: none;
     }
@@ -489,7 +489,7 @@ li {
     }
 }
 
-@media (height > 600px) and (width <= 750px) {
+@media (height > 450px) and (width <= 750px) {
     .homepage .hero-svg-normal {
         display: none;
     }
