@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html class="theme-pink-black">
+<html class="theme-pink-black" lang="en">
     <head>
         <title>coding cat | yorick's showcase</title>
         <link rel="icon" href="images/Favicon.png" type="image/png">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/coding-cat.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,7 +23,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     </head>
 
-    <body class="theme-pink-black coding-cat">
+    <body class="coding-cat">
         <header>
             <div class="themed-bg">
                 <div class="wrapper">
@@ -46,7 +45,7 @@
             <div class="wrapper">
                 <article class="art-writeup">
                     <section>
-                        <img src="images/Coding_Cat_Hero.png" class="article-hero" alt="">
+                        <img src="images/Coding_Cat_Hero.png" class="article-hero" alt="An orange cat typing frustratedly on a computer as a blue error screen glows in its face, in a cartoonish digital art style. Paer of my digital illustration titled 'Coding Cat'.">
                         <h1 aria-label="Coding Cat">
                             <svg class="h1-mobile-screen" viewBox="0 0 100 45" preserveAspectRatio="none">
                                 <text font-size="20" letter-spacing="1.9">
@@ -74,7 +73,7 @@
 
                     <section>
                         <!-- TODO: Aria label and img alt labels -->
-                        <div class="cat-animation-strip" aria-label=""></div>
+                        <div class="cat-animation-strip" role="img" aria-label="Repeating film-strip-style background showing two frames of the orange cat typing on the keyboard, one with its left paw down and one with its right paw down. This represents an animation concept for my 'Coding Cat' artwork."></div>
                         <h2>Inspiration</h2>
                         <p>The initial spark for this piece was the frustration I felt while learning to code, fixing bug after bug while hoping my program would finally run. The truth is that even the most experienced developers struggle with bugs because writing software that is both correct and simple is really difficult. As computer scientist C. A. R. Hoare once said:</p>
                         <blockquote>
@@ -87,12 +86,12 @@
                     <section>
                         <h2>Process</h2>
                         <div class="center-horizontally">
-                            <img class="process-img" src="images/Coding_Cat_Process.png" alt="">
+                            <img class="process-img" src="images/Coding_Cat_Process.png" alt="Three overlapping Procreate app screenshots showing the progression of 'Coding Cat': a rough sketch on top, line art in the middle, and the final coloured version at the bottom.">
                         </div>
                         <p>Using Procreate, I first sketched and did the line art of the piece. I chose a retro CRT computer because of its iconic look that's easily recognisable as a computer. I also drew the character as a kitten to make the piece lighthearted and visually pleasing.</p>
                         <p>For the colouring, I used blue to symbolise the high-tech feel of programming. I chose white for the computer screen's reflection on the floor to contrast with the dark blue background. This helps to show that the scene is set in a dimly-lit environment and makes the cat's shadows stand out. The floor's reflection also subtly includes the words “Error.” and “Help!” to convey a feeling of struggle to observant viewers.</p>
                         <div class="center-horizontally">
-                            <img class="reflection-img" src="images/Coding_Cat_Reflection.png" alt="">
+                            <img class="reflection-img" src="images/Coding_Cat_Reflection.png" alt="The orange cat typing at the computer seen through a circular opening, with the computer screen's light blue glow reflecting on the floor over a dark blue background.">
                         </div>
                         <p>Finally, I animated the piece by drawing multiple versions of the cat's hands typing on the keyboard. The animation starts off with pink colours as the cat types, then shifts to blue when it encounters an error. This reflects a change in mood from the enjoyment of coding to the frustration of errors.</p>
                     </section>
@@ -106,8 +105,9 @@
                                     <div class="themed-results-border flipped"></div>
                                 </div>
                                 <div class="center-horizontally">
-                                    <video class="cat-animation" preload="none" poster="images/Cat_Animation_Poster.png" autoplay muted playsinline>
+                                    <video class="cat-animation" aria-label="Animated scene of the orange cat coding on the computer and bathed in pink light from the screen. When an error message appears, the screen turns blue, and squiggly frustration lines appear next to the cat's head." preload="none" poster="images/Cat_Animation_Poster.png" autoplay muted playsinline>
                                         <source src="images/Coding_Cat_Animation.mp4" type="video/mp4">
+                                        Sorry, this video couldn't be loaded in your browser.
                                     </video>
                                 </div>
                             </div>
@@ -123,19 +123,17 @@
             <div class="themed-gradient"></div>
             <div class="themed-bg">
                 <div class="wrapper">
-                    <!-- <div class="center-horizontally"> -->
-                        <div class="footer-wrapper">
-                            <a href="index.html" class="footer-heading">yorick's showcase</a>
-                            <ul class="social-links">
-                                <li>
-                                    <a href="https://linkedin.com/in/yorick-chew" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/LinkedIn_Logo.png" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="http://instagram.com/yoyoricc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/Instagram_Logo.png" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    <!-- </div> -->
+                    <div class="footer-wrapper">
+                        <a href="index.html" class="footer-heading">yorick's showcase</a>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://linkedin.com/in/yorick-chew" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/LinkedIn_Logo.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com/yoyoricc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/Instagram_Logo.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div> 
         </footer>
