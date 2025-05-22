@@ -799,7 +799,7 @@ li {
     @media (width <= 750px) {
         inline-size: 100%;
         max-inline-size: 400px;
-        margin-block-start: 1rem;
+        margin-block-start: 0.85rem;
     }
 }
 
