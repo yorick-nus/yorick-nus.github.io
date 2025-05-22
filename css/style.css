@@ -73,7 +73,7 @@ blockquote footer {
 
     @media (width <= 750px) {
         margin-block-end: 1.75rem;
-        font-size: clamp(3.75rem, 18vw, 5rem);
+        font-size: clamp(3.75rem, 18.5vw, 5rem);
         text-align: end;
     }
 }
