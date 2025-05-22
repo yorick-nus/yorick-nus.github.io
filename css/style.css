@@ -807,7 +807,7 @@ li {
 
 .high-dog .process-img {
     margin-block-end: 1rem;
-    max-inline-size: 690px;
+    max-inline-size: 680px;
 
     @media (width <= 750px) {
         max-inline-size: 540px;
@@ -917,7 +917,7 @@ li {
 }
 
 .theme-blue-white h2 {
-    font-size: 3.55rem;
+    font-size: 3.4rem;
     margin-block-end: 0.5rem;
 
     @media (width <= 750px) {
