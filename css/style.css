@@ -72,7 +72,7 @@ blockquote footer {
     margin-inline-end: 0.5rem;
 
     @media (width <= 750px) {
-        margin-block-end: 1.75rem;
+        margin-block-end: 2rem;
         font-size: clamp(3.75rem, 18.5vw, 5rem);
         text-align: end;
     }
@@ -785,7 +785,7 @@ li {
     @media (width <= 750px) {
         margin-inline-start: 1rem;
         margin-block-start: 1.5rem;
-        margin-block-end: 0.25rem;
+        margin-block-end: 0.5rem;
         inline-size: clamp(490px, 137%, 710px);
     }
 }
