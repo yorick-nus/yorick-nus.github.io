@@ -447,16 +447,26 @@ li {
     inline-size: 100%;
     max-inline-size: 1000px;
     padding-inline: 2rem;
+    /* margin-block-end: 1rem; */
+    margin-block-end: clamp(0rem, calc(10rem - 20vh), 10rem);
 
     @media (width <= 750px) {
         padding-inline: 0;
+        /* margin-block-end: -1.5rem; */
     }
+
+    /* border: green 5px dotted; */
 }
 
 .homepage .hero-image svg {
     font-family: "Boldonse", Impact, "Arial Black", sans-serif;
     font-weight: normal;
     fill: #0000ff;
+    block-size: 100vh;
+    /* padding-block-start: 1rem; */
+    padding-block-end: calc(3rem);
+
+    /* border: red solid 5px; */
 }
 
 @media (height > 450px) and (width > 750px) {
@@ -469,9 +479,9 @@ li {
     .homepage .hero-svg-thin {
         display: none;
     }
-    .homepage .hero-image {
+    /* .homepage .hero-image {
         block-size: calc(100vh - 8rem);
-    }
+    } */
 }
 
 @media (height <= 450px) {
@@ -484,9 +494,9 @@ li {
     .homepage .hero-svg-thin {
         display: none;
     }
-    .homepage .hero-image {
+    /* .homepage .hero-image {
         block-size: calc(100vh - 8rem);
-    }
+    } */
 }
 
 @media (height > 450px) and (width <= 750px) {
@@ -499,9 +509,17 @@ li {
     .homepage .hero-svg-thin {
         display: block;
     }
-    .homepage .hero-image {
+    /* .homepage .hero-image {
         block-size: calc(100vh - 8rem);
-    }
+    } */
+}
+
+.homepage .hero-overlap {
+    position: absolute;
+    inline-size: 100%;
+    transform: translateY(-10rem);
+    
+    /* border: red 5px dotted; */
 }
 
 .homepage .themed-bg {
