@@ -402,8 +402,18 @@ li {
 .center-vertically {
     display: flex;
     align-items: center;
+}
 
-    /* border: rgb(0, 234, 255) 5px dashed; */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* Homepage specific styles */
