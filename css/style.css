@@ -784,8 +784,8 @@ li {
 
     @media (width <= 750px) {
         margin-inline-start: 1rem;
-        margin-block-start: 1rem;
-        inline-size: clamp(500px, 140%, 710px);
+        margin-block-start: 2rem;
+        inline-size: clamp(475px, 130%, 710px);
     }
 }
 
@@ -926,7 +926,7 @@ li {
     }
 }
 
-.high-dog .article-hero {
+.theme-blue-white .article-hero {
     transform: translateY(10px);
 
     @media (width <= 750px) {
