@@ -831,8 +831,10 @@ li {
 
     @media (width <= 750px) {
         grid-template-columns: 13% 1fr 13%;
-        inline-size: 110%;
-        min-inline-size: 600px;
+        /* inline-size: 110%;
+        min-inline-size: 600px; */
+        inline-size: 132%;
+        max-inline-size: 590px;
     }
 }
 
@@ -844,6 +846,7 @@ li {
     margin-block: 0;
     inline-size: 86%;
     z-index: 2;
+    padding-left: 8px;
 
     @media (width <= 750px) {
         max-inline-size: 550px;
