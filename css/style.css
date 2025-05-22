@@ -834,7 +834,7 @@ li {
         grid-template-columns: 13% 1fr 13%;
         /* inline-size: 110%;
         min-inline-size: 600px; */
-        inline-size: 132%;
+        inline-size: 121%;
         max-inline-size: 590px;
     }
 }
@@ -851,7 +851,7 @@ li {
 
     @media (width <= 750px) {
         max-inline-size: 550px;
-        inline-size: 130%;
+        inline-size: 120%;
     }
 }
 
