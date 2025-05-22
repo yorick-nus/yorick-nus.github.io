@@ -784,8 +784,9 @@ li {
 
     @media (width <= 750px) {
         margin-inline-start: 1rem;
-        margin-block-start: 2rem;
-        inline-size: clamp(475px, 130%, 710px);
+        margin-block-start: 1rem;
+        margin-block-end: 0.5rem;
+        inline-size: clamp(475px, 135%, 710px);
     }
 }
 
