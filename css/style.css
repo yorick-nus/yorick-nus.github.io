@@ -444,7 +444,6 @@ li {
     margin-inline: auto;
     position: relative;
     inline-size: 100%;
-    max-inline-size: 1000px;
     padding-inline: 2rem;
     margin-block-end: clamp(0rem, calc(10rem - 20vh - 28px), 10rem);
 
