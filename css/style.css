@@ -63,7 +63,7 @@ blockquote footer {
 .art-writeup h1 {
     font-family: "Ultra", Impact, "Arial Black", sans-serif;
     font-weight: normal;
-    font-size: clamp(4.7rem, 10vw, 6rem);
+    font-size: clamp(5.3rem, 8vw, 6rem);
     line-height: 0.95;
     
     display: flex;
@@ -232,7 +232,7 @@ header .home-button {
 
 header .home-button .home-icon {
     display: inline-flex;
-    inline-size: clamp(2.5rem, 3.5vw, 3rem);
+    inline-size: clamp(2.75rem, 3.5vw, 3rem);
     block-size: auto;
     z-index: 2;
 
@@ -244,7 +244,7 @@ header .home-button .home-icon {
 }
 
 header .home-button-bg {
-    inline-size: 6.5rem;
+    inline-size: clamp(5.75rem, 7.5vw, 6.5rem);
     block-size: auto;
     max-inline-size: none;
     position: absolute;
@@ -808,7 +808,7 @@ li {
 .high-dog .article-hero {
     margin-block-start: 3rem;
     margin-block-end: 0.75rem;
-    inline-size: clamp(710px, 92% ,750px);
+    inline-size: clamp(650px, 60vw, 750px);
     block-size: auto;
     max-inline-size: none;
 
