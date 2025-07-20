@@ -63,7 +63,7 @@ blockquote footer {
 .art-writeup h1 {
     font-family: "Ultra", Impact, "Arial Black", sans-serif;
     font-weight: normal;
-    font-size: clamp(4.7rem, 10vw, 6.5rem);
+    font-size: clamp(4.7rem, 10vw, 6rem);
     line-height: 0.95;
     
     display: flex;
@@ -79,7 +79,7 @@ blockquote footer {
 }
 
 .art-writeup h1:has(svg) {
-    margin-block-end: 0.25rem;
+    margin-block-end: 0.5rem;
     margin-inline-end: 0;
 }
 
@@ -268,7 +268,7 @@ footer {
     grid-template-columns: 1fr auto 1fr;
 
     /* padding-block-start: 0.25rem; */
-    padding-block-end: 1.75rem;
+    padding-block-end: 1.25rem;
 
     @media (width <= 750px) {
         padding-block-end: 1.25rem;
@@ -703,7 +703,7 @@ li {
 
 /* Coding Cat Page */
 .coding-cat .article-hero {
-    inline-size: 65%;
+    inline-size: 62.5%;
     block-size: auto;
 
     @media (width <= 750px) {
@@ -712,7 +712,7 @@ li {
 }
 
 .coding-cat h1 svg {
-    inline-size: 92.5%;
+    inline-size: 84.5%;
     height: auto;
 
     @media (width <= 750px) {
