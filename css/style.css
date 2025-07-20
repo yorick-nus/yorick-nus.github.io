@@ -151,8 +151,7 @@ blockquote footer {
 }
 
 .art-writeup .process-img {
-    max-inline-size: 650px;
-    inline-size: 90%;
+    inline-size: clamp(600px, 60vw, 650px);
 
     @media (width <= 750px) {
         inline-size: 100%;
@@ -703,7 +702,7 @@ li {
 
 /* Coding Cat Page */
 .coding-cat .article-hero {
-    inline-size: 62.5%;
+    inline-size: clamp(450px, 45vw, 530px);
     block-size: auto;
 
     @media (width <= 750px) {
@@ -712,7 +711,7 @@ li {
 }
 
 .coding-cat h1 svg {
-    inline-size: 84.5%;
+    inline-size: clamp(630px, 60vw, 715px);
     height: auto;
 
     @media (width <= 750px) {
@@ -834,10 +833,6 @@ li {
 }
 
 .high-dog .process-img {
-    margin-block-end: 1rem;
-    /* max-inline-size: 680px; */
-    inline-size: clamp(600px, 60vw, 680px);
-
     @media (width <= 750px) {
         max-inline-size: 540px;
     }
