@@ -374,7 +374,11 @@ li {
     z-index: 0;
 
     position: sticky;
-    top: -6.5rem;
+    top: -6rem;
+
+    @media (width <= 750px) {
+        top: -6.5rem;
+    }
 }
 
 .social-links {
@@ -977,7 +981,11 @@ li {
 }
 
 .theme-blue-white .gradient-bg {
-    top: -7.5rem;
+    top: -7rem;
+
+    @media (width <= 750px) {
+        top: -7.5rem;
+    }
 }
 
 .theme-blue-white .article-hero {
