@@ -13,7 +13,7 @@ body {
     padding: 0;
     font-family: "Manrope" ,"Helvetica Neue", Arial, sans-serif;
     font-size: 1.125rem;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     @media (width <= 750px) {
         font-size: 1rem;
@@ -354,10 +354,23 @@ li {
     grid-column: 3;
 }
 
-.gradient-bg {
+.scrollable-wrapper {
+    position: relative;
+    display: flow-root;
+}
+
+.gradient-bg-wrapper { 
     position: absolute;
     inline-size: 100%;
+    block-size: 100%;
+}
+
+.gradient-bg {
+    inline-size: 100%;
     z-index: 0;
+
+    position: sticky;
+    top: -5rem;
 }
 
 .social-links {
@@ -957,6 +970,10 @@ li {
     @media (width <= 750px) {
         line-height: 1.45;
     }
+}
+
+.theme-blue-white .gradient-bg {
+    top: -6rem;
 }
 
 .theme-blue-white .article-hero {
