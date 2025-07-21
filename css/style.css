@@ -256,6 +256,10 @@ header .home-button-bg {
     }
 }
 
+main {
+    overflow-x: hidden;
+}
+
 footer {
     font-family: "Boldonse", Impact, "Arial Black", sans-serif;
     inline-size: 100%;
