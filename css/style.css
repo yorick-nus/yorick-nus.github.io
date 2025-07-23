@@ -576,6 +576,7 @@ li {
     @media (width <= 750px) {
         font-size: 1.125rem;
         line-height: 1.45;
+        margin-block-end: 1.5rem;
     }
 }
 
