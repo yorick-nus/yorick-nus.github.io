@@ -554,8 +554,8 @@ li {
     color: #0000ff;
 }
 
-.homepage .homepage.text-section {
-    padding-block: 2rem;
+.homepage .text-section {
+    padding-block: 1.125rem;
 
     @media (width <= 750px) {
         padding-block-end: 0.25rem;
@@ -569,9 +569,9 @@ li {
 }
 
 .homepage .text-section .text-block p {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
     line-height: 1.4;
-    margin-block-end: 1.5rem;
+    margin-block-end: 1.7rem;
 
     @media (width <= 750px) {
         font-size: 1.125rem;
