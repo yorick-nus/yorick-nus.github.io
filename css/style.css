@@ -437,6 +437,25 @@ li {
     border: 0;
 }
 
+.spin-clockwise {
+    animation: spin linear infinite;
+}
+
+.spin-anticlockwise {
+    animation: spin linear infinite reverse;
+}
+
+/* Global Animations */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Homepage specific styles */
 .homepage {
     color: #0000ff; 
@@ -701,6 +720,8 @@ li {
     max-inline-size: none;
 
     position: absolute;
+
+    animation-duration: 55s;
 
     @media (width <= 750px) {
         inline-size: 7rem;
