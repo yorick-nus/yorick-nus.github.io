@@ -628,20 +628,31 @@ li {
     position: absolute;
 }
 
-.homepage .portfolio-navigation .navigation-button .background {
+.homepage .portfolio-navigation .navigation-button .pink-background {
     z-index: 1;
     max-inline-size: none;
-    inline-size: 148%;
+    inline-size: 133%;
     block-size: auto;
+
+    animation-duration: 240s;
+}
+
+.homepage .portfolio-navigation .navigation-button .white-background {
+    z-index: 2;
+    max-inline-size: none;
+    inline-size: 101%;
+    block-size: auto;
+
+    animation-duration: 65s;
 }
 
 .homepage .portfolio-navigation .navigation-button .foreground {
-    z-index: 2;
+    z-index: 3;
     max-inline-size: none;
 }
 
 .homepage .portfolio-navigation .navigation-button .hitbox {
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     inline-size: 62.5%;
     block-size: 62.5%;
