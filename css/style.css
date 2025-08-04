@@ -724,7 +724,9 @@ li {
     animation-duration: 65s;
 
     @media (width <= 750px) {
-        inline-size: 7rem;
+        inline-size: 6.75rem;
+
+        animation-duration: 75s;
     }
 }
 
