@@ -732,7 +732,7 @@ li {
 
     position: absolute;
 
-    animation-duration: 50s;
+    animation-duration: 45s;
 
     @media (width <= 750px) {
         inline-size: 6.75rem;
