@@ -506,8 +506,40 @@ li {
     @media (width <= 750px) {
         padding-block-end: 9rem;
     }
+}
 
-    /* border: red solid 5px; */
+.homepage .hero-image svg .bouncy-o {
+    animation: bounce-o 2s linear infinite;
+    animation-delay: var(--delay);
+}
+
+.delay-1 { --delay: 0.45s; }
+.delay-2 { --delay: 0.35s; }
+.delay-3 { --delay: 0.15s; }
+.delay-4 { --delay: 0.55s; }
+
+@keyframes bounce-o {
+    0% {
+        transform: translateY(0);
+    }
+    4.5% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(1.9px);
+    }
+    37.5% {
+        transform: translateY(2px);
+    }
+    38.5% {
+        transform: translateY(2px);
+    }
+    41% {
+        transform: translateY(1.9px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (height > 450px) and (width > 750px) {
@@ -520,9 +552,10 @@ li {
     .homepage .hero-svg-thin {
         display: none;
     }
-    /* .homepage .hero-image {
-        block-size: calc(100vh - 8rem);
-    } */
+    .homepage .hero-image svg .hero-dog {
+        animation: fly-dog-normal 2s linear infinite;
+        transform-origin: 24px 50px;
+    }
 }
 
 @media (height <= 450px) {
@@ -535,9 +568,6 @@ li {
     .homepage .hero-svg-thin {
         display: none;
     }
-    /* .homepage .hero-image {
-        block-size: calc(100vh - 8rem);
-    } */
 }
 
 @media (height > 450px) and (width <= 750px) {
@@ -550,9 +580,58 @@ li {
     .homepage .hero-svg-thin {
         display: block;
     }
-    /* .homepage .hero-image {
-        block-size: calc(100vh - 8rem);
-    } */
+    .homepage .hero-image svg .hero-dog {
+        animation: fly-dog-thin 2.25s linear infinite;
+        transform-origin: 24px 50px;
+    }
+}
+
+@keyframes fly-dog-normal {
+    0% {
+        transform: translateY(-2px) rotate(10deg);
+    }
+    4.5% {
+        transform: translateY(-2px) rotate(10deg);
+    }
+    35% {
+        transform: translateY(-0.1px) rotate(10deg);
+    }
+    37.5% {
+        transform: translateY(0) rotate(10deg);
+    }
+    38.5% {
+        transform: translateY(0) rotate(10deg);
+    }
+    41% {
+        transform: translateY(-0.1px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(-2px) rotate(10deg);
+    }
+}
+
+@keyframes fly-dog-thin {
+    0% {
+        transform: translateY(-9px) rotate(17deg);
+    }
+    4.5% {
+        transform: translateY(-9px) rotate(17deg);
+    }
+    47.5% {
+        transform: translateY(-7.1px) rotate(17deg);
+    }
+    50% {
+        transform: translateY(-7px) rotate(17deg);
+    }
+    51% {
+        transform: translateY(-7px) rotate(17deg);
+    }
+    43.5% {
+        transform: translateY(-7.1px) rotate(17deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(17deg);
+    }
 }
 
 .homepage .hero-overlap {
@@ -638,7 +717,7 @@ li {
 .homepage .portfolio-navigation .navigation-button .white-background {
     z-index: 2;
     max-inline-size: none;
-    inline-size: 101%;
+    inline-size: 100%;
     block-size: auto;
 
     animation-duration: 55s;
