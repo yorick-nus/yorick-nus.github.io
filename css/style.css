@@ -618,16 +618,16 @@ li {
         transform: translateY(-9px) rotate(17deg);
     }
     47.5% {
-        transform: translateY(-7.1px) rotate(17deg);
+        transform: translateY(-6.6px) rotate(17deg);
     }
     50% {
-        transform: translateY(-7px) rotate(17deg);
+        transform: translateY(-6.5px) rotate(17deg);
     }
     51% {
-        transform: translateY(-7px) rotate(17deg);
+        transform: translateY(-6.5px) rotate(17deg);
     }
     43.5% {
-        transform: translateY(-7.1px) rotate(17deg);
+        transform: translateY(-6.6px) rotate(17deg);
     }
     100% {
         transform: translateY(-9px) rotate(17deg);
